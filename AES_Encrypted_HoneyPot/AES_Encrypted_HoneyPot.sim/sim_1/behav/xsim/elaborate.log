@@ -1,0 +1,31 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L secureip -L xpm --snapshot testbench_FSM_behav xil_defaultlib.testbench_FSM -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.add_round_key [add_round_key_default]
+Compiling architecture behavioral of entity xil_defaultlib.Rijndael_s_box [rijndael_s_box_default]
+Compiling architecture behavioral of entity xil_defaultlib.sub_bytes [sub_bytes_default]
+Compiling architecture behavioral of entity xil_defaultlib.shift_rows [shift_rows_default]
+Compiling architecture behavioral of entity xil_defaultlib.lin_transf [lin_transf_default]
+Compiling architecture behavioral of entity xil_defaultlib.mix_columns [mix_columns_default]
+Compiling architecture behavioral of entity xil_defaultlib.key_schedule_func [key_schedule_func_default]
+Compiling architecture behavioral of entity xil_defaultlib.generate_round_keys [generate_round_keys_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_8 [reg_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.ControlUnit [controlunit_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.ENC_AES [enc_aes_default]
+Compiling architecture sim of entity xil_defaultlib.testbench_fsm
+Built simulation snapshot testbench_FSM_behav

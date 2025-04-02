@@ -1,0 +1,348 @@
+
+*** Running vivado
+    with args -log design_test_1_ENC_AES_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_test_1_ENC_AES_0_0.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Tue Dec 17 16:55:54 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_test_1_ENC_AES_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 552.586 ; gain = 240.527
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.cache/ip 
+Command: synth_design -top design_test_1_ENC_AES_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31516
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1438.500 ; gain = 447.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_test_1_ENC_AES_0_0' [c:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.gen/sources_1/bd/design_test_1/ip/design_test_1_ENC_AES_0_0/synth/design_test_1_ENC_AES_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'ENC_AES' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/ENC_AES.vhd:17]
+INFO: [Synth 8-3491] module 'main' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/main.vhd:5' bound to instance 'encryption_AES' of component 'main' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/ENC_AES.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/main.vhd:15]
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/register.vhd:6' bound to instance 'rgs_comp' of component 'reg' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/main.vhd:72]
+INFO: [Synth 8-638] synthesizing module '\reg ' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/register.vhd:12]
+INFO: [Synth 8-256] done synthesizing module '\reg ' (0#1) [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/register.vhd:12]
+INFO: [Synth 8-3491] module 'add_round_key' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/add_round_key.vhd:5' bound to instance 'roundkey' of component 'add_round_key' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/main.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'add_round_key' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/add_round_key.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'add_round_key' (0#1) [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/add_round_key.vhd:11]
+INFO: [Synth 8-3491] module 'sub_bytes' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:6' bound to instance 'substitute_bytes' of component 'sub_bytes' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/main.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'sub_bytes' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:11]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox0' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:10]
+INFO: [Synth 8-226] default block is never used [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Rijndael_s_box' (0#1) [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:10]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox1' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:23]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox2' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:24]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox3' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:25]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox4' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:26]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox5' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:27]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox6' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:28]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox7' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:29]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox8' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:30]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox9' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:31]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox10' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:32]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox11' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:33]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox12' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:34]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox13' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:35]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox14' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:36]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'R_sbox15' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'sub_bytes' (0#1) [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/sub_bytes.vhd:11]
+INFO: [Synth 8-3491] module 'shift_rows' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/shift_rows.vhd:5' bound to instance 'shift_rows_step' of component 'shift_rows' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/main.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'shift_rows' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/shift_rows.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'shift_rows' (0#1) [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/shift_rows.vhd:10]
+INFO: [Synth 8-3491] module 'mix_columns' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/mix_columns.vhd:5' bound to instance 'mixing_columns' of component 'mix_columns' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/main.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'mix_columns' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/mix_columns.vhd:10]
+INFO: [Synth 8-3491] module 'lin_transf' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/lin_transf.vhd:8' bound to instance 'transf_liniara0' of component 'lin_transf' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/mix_columns.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'lin_transf' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/lin_transf.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'lin_transf' (0#1) [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/lin_transf.vhd:13]
+INFO: [Synth 8-3491] module 'lin_transf' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/lin_transf.vhd:8' bound to instance 'transf_liniara1' of component 'lin_transf' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/mix_columns.vhd:21]
+INFO: [Synth 8-3491] module 'lin_transf' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/lin_transf.vhd:8' bound to instance 'transf_liniara2' of component 'lin_transf' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/mix_columns.vhd:22]
+INFO: [Synth 8-3491] module 'lin_transf' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/lin_transf.vhd:8' bound to instance 'transf_liniara3' of component 'lin_transf' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/mix_columns.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'mix_columns' (0#1) [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/mix_columns.vhd:10]
+INFO: [Synth 8-3491] module 'generate_round_keys' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/generate_round_keys.vhd:4' bound to instance 'generate_rk' of component 'generate_round_keys' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/main.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'generate_round_keys' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/generate_round_keys.vhd:14]
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/register.vhd:6' bound to instance 'rgs_comp' of component 'reg' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/generate_round_keys.vhd:33]
+INFO: [Synth 8-3491] module 'key_schedule_func' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/key_schedule.vhd:6' bound to instance 'keySched_func' of component 'key_schedule_func' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/generate_round_keys.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'key_schedule_func' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/key_schedule.vhd:13]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'sbox_inst' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/key_schedule.vhd:26]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'sbox_inst' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/key_schedule.vhd:26]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'sbox_inst' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/key_schedule.vhd:26]
+INFO: [Synth 8-3491] module 'Rijndael_s_box' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/Rijndael_s_box.vhd:5' bound to instance 'sbox_inst' of component 'Rijndael_s_box' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/key_schedule.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'key_schedule_func' (0#1) [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/key_schedule.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'generate_round_keys' (0#1) [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/generate_round_keys.vhd:14]
+INFO: [Synth 8-3491] module 'ControlUnit' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/ControlUnit.vhd:5' bound to instance 'control_unit' of component 'ControlUnit' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/main.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/ControlUnit.vhd:13]
+INFO: [Synth 8-3491] module 'reg_8' declared at 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/reg_8.vhd:34' bound to instance 'rgs_comp' of component 'reg_8' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/ControlUnit.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'reg_8' [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/reg_8.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'reg_8' (0#1) [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/reg_8.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (0#1) [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/ControlUnit.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'main' (0#1) [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/main.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ENC_AES' (0#1) [C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.srcs/sources_1/new/ENC_AES.vhd:17]
+INFO: [Synth 8-6155] done synthesizing module 'design_test_1_ENC_AES_0_0' (0#1) [c:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.gen/sources_1/bd/design_test_1/ip/design_test_1_ENC_AES_0_0/synth/design_test_1_ENC_AES_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1554.367 ; gain = 562.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1554.367 ; gain = 562.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1554.367 ; gain = 562.938
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1554.367 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1644.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1644.344 ; gain = 0.230
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ENC_AES'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                 working |                               01 |                               01
+                    stop |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ENC_AES'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
+	   2 Input     24 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 17    
+	   3 Input      8 Bit         XORs := 13    
+	   5 Input      8 Bit         XORs := 8     
++---Registers : 
+	              128 Bit    Registers := 5     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 4     
+	   3 Input  128 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 18    
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------+------------------------------------------+---------------+----------------+
+|Module Name    | RTL Object                               | Depth x Width | Implemented As | 
++---------------+------------------------------------------+---------------+----------------+
+|Rijndael_s_box | output                                   | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox0/output          | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox5/output          | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox10/output         | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox15/output         | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox4/output          | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox9/output          | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox14/output         | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox3/output          | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox8/output          | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox13/output         | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox2/output          | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox7/output          | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox12/output         | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox1/output          | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox6/output          | 256x8         | LUT            | 
+|main           | substitute_bytes/R_sbox11/output         | 256x8         | LUT            | 
+|main           | generate_rk/rgs_comp/output_reg_rep_bsel | 256x8         | Block RAM      | 
+|main           | generate_rk/rgs_comp/output_reg_rep_bsel | 256x8         | Block RAM      | 
+|main           | generate_rk/rgs_comp/output_reg_rep_bsel | 256x8         | Block RAM      | 
+|main           | generate_rk/rgs_comp/output_reg_rep_bsel | 256x8         | Block RAM      | 
++---------------+------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/encryption_AES/generate_rk/rgs_comp/output_reg_rep_bsel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/encryption_AES/generate_rk/rgs_comp/output_reg_rep_bsel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/encryption_AES/generate_rk/rgs_comp/output_reg_rep_bsel__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/encryption_AES/generate_rk/rgs_comp/output_reg_rep_bsel__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     1|
+|2     |LUT2     |   131|
+|3     |LUT3     |   155|
+|4     |LUT4     |   165|
+|5     |LUT5     |   204|
+|6     |LUT6     |   592|
+|7     |MUXF7    |   256|
+|8     |MUXF8    |   128|
+|9     |RAMB18E1 |     2|
+|10    |FDRE     |   652|
+|11    |FDSE     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1644.344 ; gain = 652.914
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:56 . Memory (MB): peak = 1644.344 ; gain = 562.938
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 1644.344 ; gain = 652.914
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1644.344 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 386 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1644.344 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 9bcbec25
+INFO: [Common 17-83] Releasing license: Synthesis
+89 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 1644.344 ; gain = 1078.594
+INFO: [Coretcl 2-1174] Renamed 24 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1644.344 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.runs/design_test_1_ENC_AES_0_0_synth_1/design_test_1_ENC_AES_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_test_1_ENC_AES_0_0_utilization_synth.rpt -pb design_test_1_ENC_AES_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 16:57:20 2024...

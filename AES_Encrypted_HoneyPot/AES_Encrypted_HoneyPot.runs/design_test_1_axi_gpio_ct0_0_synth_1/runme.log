@@ -1,0 +1,25 @@
+
+*** Running vivado
+    with args -log design_test_1_axi_gpio_ct0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_test_1_axi_gpio_ct0_0.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Tue Dec 17 16:58:15 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_test_1_axi_gpio_ct0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 551.758 ; gain = 235.980
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_test_1_axi_gpio_ct0_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry f2f0f5ee323f5ad4 to dir: C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.runs/design_test_1_axi_gpio_ct0_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.cache/ip/2024.1/f/2/f2f0f5ee323f5ad4/design_test_1_axi_gpio_0_13.dcp to C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.runs/design_test_1_axi_gpio_ct0_0_synth_1/design_test_1_axi_gpio_ct0_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.cache/ip/2024.1/f/2/f2f0f5ee323f5ad4/design_test_1_axi_gpio_0_13_sim_netlist.v to C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.runs/design_test_1_axi_gpio_ct0_0_synth_1/design_test_1_axi_gpio_ct0_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.cache/ip/2024.1/f/2/f2f0f5ee323f5ad4/design_test_1_axi_gpio_0_13_sim_netlist.vhdl to C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.runs/design_test_1_axi_gpio_ct0_0_synth_1/design_test_1_axi_gpio_ct0_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.cache/ip/2024.1/f/2/f2f0f5ee323f5ad4/design_test_1_axi_gpio_0_13_stub.v to C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.runs/design_test_1_axi_gpio_ct0_0_synth_1/design_test_1_axi_gpio_ct0_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.cache/ip/2024.1/f/2/f2f0f5ee323f5ad4/design_test_1_axi_gpio_0_13_stub.vhdl to C:/Users/innfe/Proiect_SSC/AES_Encrypted_HoneyPot/AES_Encrypted_HoneyPot.runs/design_test_1_axi_gpio_ct0_0_synth_1/design_test_1_axi_gpio_ct0_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_test_1_axi_gpio_ct0_0, cache-ID = f2f0f5ee323f5ad4.
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 16:58:28 2024...
